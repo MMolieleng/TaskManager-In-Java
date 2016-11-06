@@ -1,0 +1,31 @@
+{
+	"Programs":
+	[
+		{
+			"Command": "ls",
+			"NumProcs": 5,
+			"Outfile": "runtime/tmp/norminette.out",
+			"Errfile": "runtime/tmp/norminette.err",
+			"StartTime": 10,
+			"WorkingDir": "runtime/tmp/",
+			"StopSignal": 2,
+			"AutoStart": true,
+			"ExitCodes": [0, 130],
+			"AutoRestart": "Unexpected",
+			"StartRetries": 5,
+			"StopTime": 10,
+			"Unmusk":777
+		},
+		{
+			"Command": "cat TaskMaster.java",
+			"NumProcs": 3,
+			"ExitCodes": [0, 1],
+			"WorkingDir": "cat/cat.txt",
+			"Outfile": "cat/cat.out",
+			"Errfile": "cat/cat.err",
+			"StartTime": 0,
+			"StartRetries": 2,
+			"Unmusk":777
+		}
+	]
+}
